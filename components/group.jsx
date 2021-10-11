@@ -5,11 +5,16 @@ const divStyle = {
     "overflowY": "scroll",
     "maxHeight": "350px",
     "paddingRight": "25px",
+    // "border": "1px solid",
+    "borderRadius": "5px",
+    "color": "white",
+    "background": "#17202a"
 }
 
 const itemContainerStyle = {
-    "fontFamily": "Nunito Sans, sans-serif;",
-    "fontSize": "1.4em"
+    // "fontFamily": "Nunito Sans, sans-serif;",
+    "fontSize": "1.4em",
+    "fontFamily": "'Bungee Hairline', cursive;"
 }
 
 export default function Group(props) {
@@ -27,15 +32,15 @@ export default function Group(props) {
             })}
             <style jsx>{`
                 ::-webkit-scrollbar {
-                    width: 3px;
+                    width: 5px;
                 }
 
                 ::-webkit-scrollbar-track {
-                    background: #f1f1f1;
+                    background: #17202a;
                 }
 
                 ::-webkit-scrollbar-thumb {
-                    background: #888;
+                    background: #efce71;
                 }
 
                 ::-webkit-scrollbar-thumb:hover {

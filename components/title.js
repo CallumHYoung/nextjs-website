@@ -16,9 +16,6 @@ const animation = [
     { "s": "CAL_", "ms": ms1 },
     { "s": "CALL", "ms": ms1 },
     { "s": "CALL_", "ms": ms1 },
-    { "s": "CALLJ", "ms": ms1 },
-    { "s": "CALLJ_", "ms": ms3 },
-    { "s": "CALL_", "ms": ms1 },
     { "s": "CALLU", "ms": ms3 },
     { "s": "CALLU_", "ms": ms1 },
     { "s": "CALLUM", "ms": ms1 },
@@ -38,7 +35,7 @@ const animation = [
     { "s": "CALLUM YOUNG_", "ms": ms3 },
     { "s": "CALLUM YOUNG ", "ms": ms3 },
     { "s": "CALLUM YOUNG_", "ms": ms3 },
-    { "s": "CALLUM YOUNG", "ms": ms4 },
+    { "s": "CALLUM YOUNG", "ms": ms },
     { "s": "CALLUM YOUNG", "ms": ms },
     { "s": "CALLUM YOUN", "ms": ms },
     { "s": "CALLUM YOU", "ms": ms },
@@ -60,6 +57,12 @@ let updateFrame = (counter, setTitle) => {
     }
 }
 
+const titleStyle = {
+    "fontSize": "5rem",
+    "fontFamily": "'Bungee Hairline', cursive;",
+    "color": "#efce71"
+}
+
 export default function Title(props) {
     const [title, setTitle] = useState('');
     let index = 0;
@@ -70,7 +73,7 @@ export default function Title(props) {
 
     return (
         <>
-            <h1 style={{ "fontSize": "5rem" }}>
+            <h1 style={titleStyle}>
                 {title}
             </h1>
         </>

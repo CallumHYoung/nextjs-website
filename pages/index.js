@@ -8,19 +8,22 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Callum Young</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Gruppo&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"></link>
       </Head>
 
       <main>
         <Title class="title" />
         <Group projects={[
           { "name": "Partnyr", "url": "https://partnyr.com", "image": "partnyr_small.png", "stack": "NodeJS, NextJS, Typescript, Prisma, React" },
-          { "name": "Online Theatre", "url": "google.com", "image": "email.png" },
-          { "name": "Gif Editor", "url": "google.com", "image": "email.png" },
-          { "name": "Discord Bot", "url": "google.com", "image": "email.png" },
-          { "name": "CuddleMe App", "url": "google.com", "image": "email.png" },
-          { "name": "Website (This!)", "image": "email.png" }
+          { "name": "Online Theatre", "url": "google.com", "image": "email.svg" },
+          { "name": "Gif Editor", "url": "google.com", "image": "email.svg" },
+          { "name": "Discord Bot", "url": "google.com", "image": "email.svg" },
+          { "name": "CuddleMe App", "url": "google.com", "image": "email.svg" },
+          { "name": "Website (This!)", "image": "email.svg" }
         ]}></Group>
       </main>
 
@@ -31,20 +34,20 @@ export default function Home() {
           rel="noopener noreferrer"
         >
 
-          <img src="github.png" alt="GitHub" className="logo" />
+          <img src="github.svg" alt="GitHub" className="logo" />
         </a>
         <a
           href="https://www.linkedin.com/in/callumhyoung/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="linkedin.png" alt="LinkedIn" className="logo" />
+          <img src="linkedin.svg" alt="LinkedIn" className="logo" />
         </a>
         <a
           href="mailto:contact@callumyoung.com?subject = Feedback&body = Message"
           target="_blank"
           rel="noopener noreferrer">
-          <img src="email.png" alt="Email" className="logo" />
+          <img src="email.svg" alt="Email" className="logo" />
         </a>
       </footer>
 
@@ -59,6 +62,8 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #17202a;
+          color: #2980b9;
         }
 
         main {
@@ -73,7 +78,7 @@ export default function Home() {
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
+          border-top: 1px solid #efce71;
           display: flex;
           justify-content: center;
           align-items: center;
