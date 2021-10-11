@@ -1,0 +1,19 @@
+.top {
+    left: 0px;
+    top:0px;
+
+    animation: moveToTop 3s;
+    -moz-animation: moveToTop 3s;
+    -webkit-animation: moveToTop 3s;
+    
+    @keyframes moveToTop{
+        from {
+            
+        }
+
+        to: {
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
