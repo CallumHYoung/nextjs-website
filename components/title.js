@@ -58,9 +58,10 @@ let updateFrame = (counter, setTitle) => {
 }
 
 const titleStyle = {
-    "fontSize": "5rem",
+    "fontSize": "3vw * 2vh",
     "fontFamily": "'Bungee Hairline', cursive;",
-    "color": "#efce71"
+    "color": "#efce71",
+    "textAlign": "center"
 }
 
 export default function Title(props) {
