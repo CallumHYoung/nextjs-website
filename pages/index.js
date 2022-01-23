@@ -18,12 +18,13 @@ export default function Home() {
       <main>
         <Title class="title" />
         <Group projects={[
-          { "name": "Partnyr", "url": "https://partnyr.com", "image": "partnyr_small.png", "stack": "NodeJS, NextJS, Typescript, Prisma, React" },
-          { "name": "Online Theatre", "url": "google.com", "image": "email.svg" },
-          { "name": "Gif Editor", "url": "google.com", "image": "email.svg" },
-          { "name": "Discord Bot", "url": "google.com", "image": "email.svg" },
-          { "name": "CuddleMe App", "url": "google.com", "image": "email.svg" },
-          { "name": "Website (This!)", "image": "email.svg" }
+          { name: "Partnyr", url: "https://partnyr.com", image: "partnyr_small.png", stack: "NodeJS, NextJS, React, Typescript, Prisma, React" },
+          { name: "MetaScout Analytics", url: "https://metascout.gg", image: "metascout.svg", stack: "NextJS, Typescript, React, Prisma, Vercel" },
+          { name: "Gif Editor", url: "https://github.com/CallumHYoung/GifEditor", image: "editor.svg", "stack": "NodeJS" },
+          { name: "Online Theatre", url: "google.com", image: "theatre.svg", stack: "NodeJS, ThreeJS" },
+          { name: "Discord Bot", url: "google.com", image: "email.svg", stack: "NodeJS, DiscordJS" },
+          { name: "CuddleMe App", url: "google.com", image: "email.svg", stack: "Kotlin, Java" },
+          { name: "Website (This!)", url: "https://www.callumyoung.com/", image: "email.svg", stack: "NextJS, NodeJS, React, Vercel" }
         ]}></Group>
       </main>
 
@@ -44,7 +45,7 @@ export default function Home() {
           <img src="linkedin.svg" alt="LinkedIn" className="logo" />
         </a>
         <a
-          href="mailto:contact@callumyoung.com?subject = Feedback&body = Message"
+          href="mailto:contact@callumyoung.com?subject = Hello from Callumyoung.com&body = Message"
           target="_blank"
           rel="noopener noreferrer">
           <img src="email.svg" alt="Email" className="logo" />
