@@ -1,0 +1,40 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.titleAnchor:hover {
+    cursor: pointer;
+}
+
+.options {
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.options li {
+    text-align: left;
+    display: block;
+    float: none;
+}
+
+.showDropdown {
+    display: block;
+}
+
+.hideDropdown {
+    display: none;
+}
+
+.navbar :first-child {
+    display: inline;
+}
+
+.navbar li {
+    display: block;
+    margin: 10px;
+}

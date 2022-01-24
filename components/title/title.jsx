@@ -1,5 +1,6 @@
-import Link from 'next/link'
 import React, { useState, useEffect } from 'react';
+
+import styles from './title.module.css';
 
 const ms = 50;
 const ms1 = 100;
@@ -57,12 +58,6 @@ let updateFrame = (counter, setTitle) => {
     }
 }
 
-const titleStyle = {
-    "fontSize": "3vw * 2vh",
-    "fontFamily": "'Bungee Hairline', cursive;",
-    "color": "#efce71",
-    "textAlign": "center"
-}
 
 export default function Title(props) {
     const [title, setTitle] = useState('');
@@ -74,7 +69,7 @@ export default function Title(props) {
 
     return (
         <>
-            <h1 style={titleStyle}>
+            <h1 className={styles.title}>
                 {title}
             </h1>
         </>
