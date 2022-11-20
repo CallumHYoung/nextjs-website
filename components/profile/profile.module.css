@@ -1,0 +1,15 @@
+.container {
+    display: inline;
+}
+
+.profilePicture {
+    display: inline;
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

@@ -1,10 +1,10 @@
-import Head from 'next/head'
-
-import Group from '../components/group';
-import Navigation from '../components/navigation/navigation';
-import Footer from '../components/footer/footer';
-
 import styles from './index.module.css';
+
+import Head from 'next/head'
+import Footer from '../components/footer/footer';
+import Card from '../components/profileCard/card';
+import Projects from '../components/projects/projects';
+import Project from '../components/projects/project/project';
 
 export default function Home() {
   return (
@@ -19,9 +19,18 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <Navigation/>
+      {/* <Gacha/> */}
+      {/* <Navigation/> */}
+
       <main>
-        <Group projects={[
+        <Card/>
+        {/* <Projects>
+          <a name="projects"/>
+          <Project name="Twitch Stock Exchange"/>
+          <Project name="Online theatre" img="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/twitch-512.png"/>
+          <Project name="Metascout Analytics"/>
+        </Projects> */}
+        {/* <Group projects={[
           { name: "Partnyr", url: "https://partnyr.com", image: "partnyr_small.png", stack: "NodeJS, NextJS, React, Typescript, Prisma, React" },
           { name: "MetaScout Analytics", url: "https://metascout.gg", image: "metascout.svg", stack: "NextJS, Typescript, React, Prisma, Vercel" },
           { name: "Gif Editor", url: "https://github.com/CallumHYoung/GifEditor", image: "editor.svg", "stack": "NodeJS" },
@@ -29,7 +38,7 @@ export default function Home() {
           { name: "Discord Bot", url: "google.com", image: "email.svg", stack: "NodeJS, DiscordJS" },
           { name: "CuddleMe App", url: "google.com", image: "email.svg", stack: "Kotlin, Java" },
           { name: "Website (This!)", url: "https://www.callumyoung.com/", image: "email.svg", stack: "NextJS, NodeJS, React, Vercel" }
-        ]}/>
+        ]}/> */}
       </main>
 
       <Footer/>
@@ -53,6 +62,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          width: 70%;
         }
 
         a {
